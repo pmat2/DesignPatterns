@@ -1,7 +1,7 @@
 package creational.singleton;
 
 public class Singleton {
-    private static Singleton instance;
+    private static volatile Singleton instance;             // fix for returning partially constructed object from multiple threads
     private String data;
 
     private Singleton(String data) {
@@ -9,10 +9,13 @@ public class Singleton {
     }
 
     public static Singleton getInstance(String data) {
-        if (instance == null) {
-            instance = new Singleton(data);
+        if (instance == null) {                             // double-checked locking idiom
+            synchronized (Singleton.class) {                // prevention from multiple threads executing this code simultaneously
+                if (instance == null) {
+                    instance = new Singleton(data);
+                }
+            }
         }
-
         return instance;
     }
 }
