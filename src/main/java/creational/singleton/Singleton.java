@@ -9,13 +9,15 @@ public class Singleton {
     }
 
     public static Singleton getInstance(String data) {
-        if (instance == null) {                             // double-checked locking idiom
+        Singleton result = instance;                        // storing instance locally to avoid storing it in main memory
+        if (result == null) {                               // double-checked locking idiom
             synchronized (Singleton.class) {                // prevention from multiple threads executing this code simultaneously
-                if (instance == null) {
-                    instance = new Singleton(data);
+                result = instance;
+                if (result == null) {
+                    instance = result = new Singleton(data);
                 }
             }
         }
-        return instance;
+        return result;
     }
 }
