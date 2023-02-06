@@ -1,0 +1,3 @@
+- Separation of construction from object representation
+- Builder class with same fields
+- For reuse of same creation code use Director

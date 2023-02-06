@@ -1,0 +1,2 @@
+- Only once instance of this class is allowed in application
+- Thread safe

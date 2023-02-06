@@ -1,0 +1,3 @@
+- Various families of related products
+- Evolution point from factory
+- OCP, SRP - centralized code

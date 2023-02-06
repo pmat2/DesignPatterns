@@ -1,0 +1,2 @@
+- Turn method call into stand-alone object
+- Possibility of using commands as method arguments

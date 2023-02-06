@@ -1,0 +1,4 @@
+- Execute several handlers in order
+- Allow for dynamic handlers change
+- Each handler must process request or pass it
+- Client can trigger any handler in chain

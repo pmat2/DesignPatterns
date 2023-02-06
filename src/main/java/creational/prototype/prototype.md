@@ -1,0 +1,3 @@
+- Shallow copy - holds references, Deep copy - unreferenced
+- Copy/duplicate class without repeated initialization
+- Use when code should NOT depend on concrete classes
