@@ -1,0 +1,3 @@
+- Encapsulates how set of objects react with one another
+- Forces objects to communicate via mediator
+- Reduces dependencies between communicating objects
