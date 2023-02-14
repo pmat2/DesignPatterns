@@ -1,0 +1,2 @@
+- Delegates creation of a snapshot to owner of that state
+- Original class can make snapshot, because it has full access to it's state
