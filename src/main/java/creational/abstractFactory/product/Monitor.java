@@ -1,5 +1,4 @@
 package creational.abstractFactory.product;
 
-public interface Monitor {
-    void assemble();
+public interface Monitor extends Product {
 }
