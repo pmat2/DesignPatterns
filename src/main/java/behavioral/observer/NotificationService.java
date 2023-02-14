@@ -21,6 +21,7 @@ public class NotificationService {
     }
 
     public void notifyCustomers(Event eventType) {
-        customers.get(eventType).forEach(listener -> listener.update(eventType));
+        customers.get(eventType)
+                .forEach(listener -> listener.update(eventType));
     }
 }
