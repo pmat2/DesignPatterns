@@ -1,1 +1,4 @@
 - Notifies any objects or subscribers, about any events happening to the observed object or publisher
+- Allows to take action on set of objects when state of another object changes
+- Possible to dynamically change observators
+- Easily extended by adding new listeners
