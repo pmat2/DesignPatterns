@@ -9,7 +9,7 @@ public class EmailMessageListener implements MessageListener {
     }
 
     @Override
-    public void update(Event eventType){
+    public void update(Event eventType) {
         // send email
     }
 }

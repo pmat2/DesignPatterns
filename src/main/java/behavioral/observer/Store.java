@@ -8,11 +8,11 @@ public class Store {
         notificationService = new NotificationService();
     }
 
-    public void newItemPromotion(){
+    public void newItemPromotion() {
         notificationService.notifyCustomers(Event.NEW_ITEM);
     }
 
-    public void newSalePromotion(){
+    public void newSalePromotion() {
         notificationService.notifyCustomers(Event.SALE);
     }
 

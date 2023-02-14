@@ -2,7 +2,7 @@ package behavioral.observer;
 
 public class Impl {
 
-    public void subscirbeAndNotify(){
+    public void subscirbeAndNotify() {
 
         Store store = new Store();
         store.getNotificationService().subscribe(Event.NEW_ITEM, new EmailMessageListener("pawel@devpro.dev"));

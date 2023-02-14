@@ -12,15 +12,15 @@ public class NotificationService {
                 .forEach(event -> customers.put(event, new ArrayList<>()));
     }
 
-    public void subscribe(Event eventType, MessageListener listener){
+    public void subscribe(Event eventType, MessageListener listener) {
         customers.get(eventType).add(listener);
     }
 
-    public void unsubscribe(Event eventType, MessageListener listener){
+    public void unsubscribe(Event eventType, MessageListener listener) {
         customers.get(eventType).remove(listener);
     }
 
-    public void notifyCustomers(Event eventType){
+    public void notifyCustomers(Event eventType) {
         customers.get(eventType).forEach(listener -> listener.update(eventType));
     }
 }
