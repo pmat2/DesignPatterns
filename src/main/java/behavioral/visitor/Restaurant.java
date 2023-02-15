@@ -4,11 +4,11 @@ import lombok.Setter;
 
 @Setter
 public class Restaurant extends Client {
-    public final boolean availableAbroad;
+    public final boolean serviceDelivery;
 
     public Restaurant(String name, String address, String phoneNumber, boolean availableAbroad) {
         super(name, address, phoneNumber);
-        this.availableAbroad = availableAbroad;
+        this.serviceDelivery = availableAbroad;
     }
 
     @Override

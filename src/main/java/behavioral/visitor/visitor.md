@@ -1,2 +1,2 @@
 - Separates algorithms or operations from objects acted upon
-- 
+- SRP, OCP
